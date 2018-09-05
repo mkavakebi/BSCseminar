@@ -1,0 +1,109 @@
+%mscS --> seminar
+%msc --> Thesis
+
+% برای گزارش سمینار mscS  و برای پایان‌نامه ,msc را انتخاب کنید
+\documentclass[oneside,openany,mscS]{SBU-Thesis}
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\begin{document}
+	%عنوان پایان‌نامه
+	\title{مقیاس پذیری در تکنولوژی های غیر متمرکز، مبتنی بر بلاکچین}
+	
+	%رشته
+	\subject{مهندسی کامپیوتر}
+	
+	%گرایش
+	\field{نرم‌افزار}
+	
+	%نام
+	\name{مرتضی}
+	
+	%نام خانوادگی
+	\surname{کواکبی}
+	
+	%استاد راهنما
+	\firstsupervisor{دکتر محمود نشاطی}
+	
+	%استاد راهنمای دوم (در صورت وجود، در غیر این صورت این خط را حذف کنید)
+%	\secondsupervisor{دکتر محمود نشاطی}
+
+	%استاد مشاور (در صورت وجود، در غیر این صورت این خط را حذف کنید)
+%	\firstadvisor{دکتر محمود نشاطی}
+
+%تاریخ انجام پایان‌نامه
+	\thesisdate{پاییز ۱۳۹7}
+	
+	%نام دانشکده
+	\faculty{دانشکده مهندسی و علوم کامپیوتر}
+	
+	%نام دانشگاه
+	\university{دانشگاه شهید بهشتی}
+	
+	%مقادیر انگلیسی برای صفحه آخر
+	\latinuniversity{Shahid Beheshti University}
+	\latinfaculty{Faculty of Computer Science \& Engineering}
+	\latintitle{A Study on Scalability Problem in decentralized technologies based on Block-Chain}
+	\latinname{Morteza}
+	\latinsurname{Kavakebi}
+	\latinthesisdate{2018}
+	\firstlatinsupervisor{Dr. Mahmood Neshati}
+	%	\secondlatinsupervisor{Dr. Mahmood Neshati}
+	%	\firstlatinadvisor{Dr. Mahmood Neshati}
+	% چکیده به فارسی
+	\fa-abstract{
+توسعه روز افزون محبوبیت خدمات مبتنی بر تکنولوژی بلاک چین، مقیاس پذیری را به مساله اصلی و مبرم این حوزه تبدیل کرده است. تا کنون با تلاش هایی که برای مرتفع کردن مشکل انجام شده، نوید پیشرفت چشمگیر نسبت به مدل پایه داده می شود. در این سمینار به تبیین مشکل می پردازیم و راهکار های ارائه شده را دسته بندی و مقایسه خواهیم کرد. 
+	}
+	%کلمات کلیدی:
+	\keywords{مقیاس پذیری، بلاک چین، غیر متمرکز}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	
+\firstPage %ساخت صفحه اول پایان‌نامه 
+\afterpage{\blankpage}
+\pagebreak
+
+\tableofcontents % فهرست مطالب
+\listoffigures \newpage % فهرست تصاویر
+\listoftables \newpage % فهرست جداول
+
+	
+\abstractPage % ساخت صفحه چکیده
+		
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+
+% مراجع
+\newpage
+%\onehalfspacing
+\bibliographystyle{ieeetr-fa}%{chicago-fa}%{plainnat-fa}%
+\bibliography{thesis}
+
+% چکیده به انگلیسی
+\en-abstract
+{
+	This is Abstract in English.
+}
+
+% کلمات کلیدی انگلیسی 
+\latinkeywords
+{
+	Word1, Word2, Word3
+}
+
+\latinAbstractPage % ساخت صفحه چکیده به انگلیسی
+\latinFirstPage % ساخت صفحه آخر
+
+	
+\end{document}
